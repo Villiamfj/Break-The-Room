@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.breaktheroom.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "P:\\Github\\VRSPIL\\Break-The-Room\\Break The Room\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Break The Room [Testing]"
+        }
+      }
+    }
+  ]
+}

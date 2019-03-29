@@ -18,7 +18,7 @@ namespace Valve.VR.InteractionSystem
 		public int angularVelocityAverageFrames = 11;
 
 		public bool estimateOnAwake = false;
-
+        public float w;
 		private Coroutine routine;
 		private int sampleCount;
 		private Vector3[] velocitySamples;
@@ -59,8 +59,7 @@ namespace Valve.VR.InteractionSystem
 				}
 				velocity *= ( 1.0f / velocitySampleCount );
 			}
-
-			return velocity;
+            return velocity;
 		}
 
 

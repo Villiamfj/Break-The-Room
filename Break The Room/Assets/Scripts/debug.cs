@@ -16,8 +16,18 @@ public class debug : MonoBehaviour
     void Update()
     {
         //Debug.Log(Check);
-        Debug.Log(Rb.velocity);
-
+        //Debug.Log(Rb.velocity);
+        try
+        {
+            if (transform.parent.gameObject.name == "RightHand")
+            {
+                Debug.Log(transform.parent.gameObject.GetComponent<Rigidbody>().velocity);
+            } 
+        }
+        catch
+        {
+            //Debug.Log("off");
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {

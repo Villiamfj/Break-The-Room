@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 
 public class Destrucktable : MonoBehaviour
 {
@@ -21,82 +22,84 @@ public class Destrucktable : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.gameObject.name == "RightHand")
-        {
-            GameObject Rhand = GameObject.Find("Righthand");
-            if (Rhand.GetComponent<Rigidbody>().velocity.x > V || Rhand.GetComponent<Rigidbody>().velocity.y > V || Rhand.GetComponent<Rigidbody>().velocity.z > V)
-            {
-                if (collision.gameObject.tag == "Des")
-                {
-                    Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
-                    Destroy(collision.gameObject);
-                }
-                if (gameObject.tag == "Des")
-                {
-                    Instantiate(Spawnee, new Vector3(transform.position.x,transform.position.y, transform.position.z), Quaternion.identity);
-                    Destroy(gameObject);
-                }
-            }
-        }
-
-        if(collision.transform.parent.gameObject.name == "LeftHand")
-        {
-            GameObject Lhand = GameObject.Find("LeftHand");
-            if (Lhand.GetComponent<Rigidbody>().velocity.x > V || Lhand.GetComponent<Rigidbody>().velocity.y > V || Lhand.GetComponent<Rigidbody>().velocity.z > V)
-            {
-                if (collision.gameObject.tag == "Des")
-                {
-                    Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
-                    Destroy(collision.gameObject);
-
-                }
-                if (gameObject.tag == "Des")
-                {
-                    Instantiate(Spawnee, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-                    Destroy(gameObject);
-
-                }
-            }
-            
-        }
-        
-
         try
         {
-            ORb = collision.rigidbody;
-            if (ORb.velocity.x > V || ORb.velocity.y > V || ORb.velocity.z > V || Rb.velocity.x > V || Rb.velocity.y > V || Rb.velocity.z > V)
+            if (collision.transform.parent.gameObject.name == "RightHand")
             {
-                if (collision.gameObject.tag == "Des")
+                GameObject Rhand = GameObject.Find("Righthand");
+                if (Rhand.GetComponent<Rigidbody>().velocity.magnitude > V)
                 {
-                    Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
-                    Destroy(collision.gameObject);
-
-
-                }
-                if (gameObject.tag == "Des")
-                {
-                    Instantiate(Spawnee, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-                    Destroy(gameObject);
-
+                    if (collision.gameObject.tag == "Des")
+                    {
+                        Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
+                        Destroy(collision.gameObject);
+                    }
+                    if (gameObject.tag == "Des")
+                    {
+                        Instantiate(Spawnee, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+                        Destroy(gameObject);
+                    }
                 }
             }
 
+            if (collision.transform.parent.gameObject.name == "LeftHand")
+            {
+                GameObject Lhand = GameObject.Find("LeftHand");
+                if (Lhand.GetComponent<Rigidbody>().velocity.magnitude > V )
+                {
+                    if (collision.gameObject.tag == "Des")
+                    {
+                        Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
+                        Destroy(collision.gameObject);
+
+                    }
+                    if (gameObject.tag == "Des")
+                    {
+                        Instantiate(Spawnee, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+                        Destroy(gameObject);
+
+                    }
+                }
+
+            }
         }
         catch
         {
-            if (Rb.velocity.x > V || Rb.velocity.y > V || Rb.velocity.z > V)
+            try
             {
-                if (collision.gameObject.tag == "Des")
+                ORb = collision.rigidbody;
+                if (ORb.velocity.magnitude > V || Rb.velocity.magnitude > V)
                 {
-                    Destroy(collision.gameObject);
+                    if (collision.gameObject.tag == "Des")
+                    {
+                        Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
+                        Destroy(collision.gameObject);
+
+
+                    }
+                    if (gameObject.tag == "Des")
+                    {
+                        Instantiate(Spawnee, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+                        Destroy(gameObject);
+
+                    }
                 }
-                if (gameObject.tag == "Des")
+
+            }
+            catch
+            {
+                if (Rb.velocity.magnitude > V)
                 {
-                    Destroy(gameObject);
+                    if (collision.gameObject.tag == "Des")
+                    {
+                        Destroy(collision.gameObject);
+                    }
+                    if (gameObject.tag == "Des")
+                    {
+                        Destroy(gameObject);
+                    }
                 }
             }
         }
-
-
     }
 }

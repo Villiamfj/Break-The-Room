@@ -5,7 +5,7 @@ using Valve.VR;
 
 public class TrackVel : MonoBehaviour
 {
-    float v;
+    public float v;
     SteamVR_Behaviour_Pose trackedObj;
     
     
@@ -19,7 +19,7 @@ public class TrackVel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(trackedObj.GetVelocity().magnitude);
-        
+        //Debug.Log(trackedObj.GetVelocity().magnitude);
+        v = trackedObj.GetVelocity().magnitude;
     }
 }

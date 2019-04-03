@@ -8,7 +8,8 @@ public class Destrucktable : MonoBehaviour
     // Start is called before the first frame update
     Rigidbody Rb;
     Rigidbody ORb;
-    public float V;
+    public double ObjObjV = 3;
+    public double HandV = 0.05;
     public GameObject Spawnee;
     void Start()
     {
@@ -27,7 +28,7 @@ public class Destrucktable : MonoBehaviour
             if (collision.transform.parent.gameObject.name == "RightHand")
             {
                 GameObject Rhand = GameObject.Find("Righthand");
-                if (Rhand.GetComponent<Rigidbody>().velocity.magnitude > V)
+                if (Rhand.GetComponent<TrackVel>().v > HandV)
                 {
                     if (collision.gameObject.tag == "Des")
                     {
@@ -45,7 +46,7 @@ public class Destrucktable : MonoBehaviour
             if (collision.transform.parent.gameObject.name == "LeftHand")
             {
                 GameObject Lhand = GameObject.Find("LeftHand");
-                if (Lhand.GetComponent<Rigidbody>().velocity.magnitude > V )
+                if (Lhand.GetComponent<TrackVel>().v > HandV)
                 {
                     if (collision.gameObject.tag == "Des")
                     {
@@ -68,7 +69,7 @@ public class Destrucktable : MonoBehaviour
             try
             {
                 ORb = collision.rigidbody;
-                if (ORb.velocity.magnitude > V || Rb.velocity.magnitude > V)
+                if (ORb.velocity.magnitude > ObjObjV || Rb.velocity.magnitude > ObjObjV)
                 {
                     if (collision.gameObject.tag == "Des")
                     {
@@ -88,7 +89,7 @@ public class Destrucktable : MonoBehaviour
             }
             catch
             {
-                if (Rb.velocity.magnitude > V)
+                if (Rb.velocity.magnitude > ObjObjV)
                 {
                     if (collision.gameObject.tag == "Des")
                     {

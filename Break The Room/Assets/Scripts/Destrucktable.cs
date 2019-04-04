@@ -11,6 +11,7 @@ public class Destrucktable : MonoBehaviour
     public double ObjObjV = 3;
     public double HandV = 0.05;
     public GameObject Spawnee;
+
     void Start()
     {
         Rb = GetComponent<Rigidbody>(); 
@@ -21,15 +22,59 @@ public class Destrucktable : MonoBehaviour
     {
         
     }
+    //"collision" = det obj man støder sammen med
     private void OnCollisionEnter(Collision collision)
     {
+        //Hvis collision er højre hånd
+        if (collision.gameObject.name == "RightHand")
+        {
+            GameObject Rhand = GameObject.Find("RightHand");
+            if (Rhand.GetComponent<TrackVel>().v > HandV)
+            {
+                Debug.Log("GUT PUNCH R");
+                if (collision.gameObject.tag == "Des")
+                {
+                    Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
+                    Destroy(collision.gameObject);
+                }
+                if (gameObject.tag == "Des")
+                {
+                    Instantiate(Spawnee, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+                    Destroy(gameObject);
+                }
+            }
+        }
+        //Hvis collison er venstre hånd
+        if (collision.gameObject.name == "LeftHand")
+        {
+            GameObject Lhand = GameObject.Find("LeftHand");
+            if (Lhand.GetComponent<TrackVel>().v > HandV)
+            {
+                Debug.Log("GUT PUNCH L");
+                if (collision.gameObject.tag == "Des")
+                {
+                    Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
+                    Destroy(collision.gameObject);
+
+                }
+                if (gameObject.tag == "Des")
+                {
+                    Instantiate(Spawnee, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+                    Destroy(gameObject);
+
+                }
+            }
+        }
         try
         {
+            //hvis collision er holdt i højre hånd
             if (collision.transform.parent.gameObject.name == "RightHand")
             {
-                GameObject Rhand = GameObject.Find("Righthand");
+
+                GameObject Rhand = GameObject.Find("RightHand");
                 if (Rhand.GetComponent<TrackVel>().v > HandV)
                 {
+                    Debug.Log("PARENT FOUND R");
                     if (collision.gameObject.tag == "Des")
                     {
                         Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
@@ -42,12 +87,13 @@ public class Destrucktable : MonoBehaviour
                     }
                 }
             }
-
+            //hvis collision er holdt i venstre hånd
             if (collision.transform.parent.gameObject.name == "LeftHand")
             {
                 GameObject Lhand = GameObject.Find("LeftHand");
                 if (Lhand.GetComponent<TrackVel>().v > HandV)
                 {
+                    Debug.Log("PARENT FOUND L");
                     if (collision.gameObject.tag == "Des")
                     {
                         Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
@@ -68,6 +114,7 @@ public class Destrucktable : MonoBehaviour
         {
             try
             {
+                //hvis obj ikke er har noget med hånden at gøre under collision
                 ORb = collision.rigidbody;
                 if (ORb.velocity.magnitude > ObjObjV || Rb.velocity.magnitude > ObjObjV)
                 {

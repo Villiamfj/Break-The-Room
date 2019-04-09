@@ -147,6 +147,9 @@ MonoBehaviour:
   HandV: 0.05
   Spawnee: {fileID: 6605953997658031598, guid: 30703dc0288b95b41bc16b5707891d00, type: 3}
   GivenScore: 1
+  SpawnedText: {fileID: 4860862036821289766, guid: 7120a3fe4e98ca4489136b1aa145a51b,
+    type: 3}
+  Offset: {x: 0, y: 0, z: 0}
 --- !u!54 &29693160
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1061,6 +1064,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8867941426778513213, guid: b62f53a552c38454987d98ab22ee066f,
+        type: 3}
+      propertyPath: SpawnedText
+      value: 
+      objectReference: {fileID: 2319231724795081113, guid: 555e29aa3b246434d913a3fd2cc8f9e1,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b62f53a552c38454987d98ab22ee066f, type: 3}
 --- !u!1 &1032727820
@@ -1596,7 +1605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1469443422
 Transform:
   m_ObjectHideFlags: 0
@@ -2237,6 +2246,8 @@ MonoBehaviour:
   HandV: 0.5
   Spawnee: {fileID: 9008616770560313634, guid: 28ba71c3cbe0d1142a1cd18796ae07f6, type: 3}
   GivenScore: 1
+  SpawnedText: {fileID: 0}
+  Offset: {x: 0, y: 0, z: 0}
 --- !u!1001 &4930112236809225595
 PrefabInstance:
   m_ObjectHideFlags: 0

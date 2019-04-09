@@ -11,6 +11,9 @@ public class Destrucktable : MonoBehaviour
     public double ObjObjV = 3;
     public double HandV = 0.05;
     public GameObject Spawnee;
+    public float GivenScore = 1;
+    public GameObject SpawnedText;
+    public Vector3 Offset = new Vector3(0, 0, 0);
 
     void Start()
     {
@@ -31,14 +34,16 @@ public class Destrucktable : MonoBehaviour
             GameObject Rhand = GameObject.Find("RightHand");
             if (Rhand.GetComponent<TrackVel>().v > HandV)
             {
-                Debug.Log("GUT PUNCH R");
+                //Debug.Log("GUT PUNCH R");
                 if (collision.gameObject.tag == "Des")
                 {
+                    Score();
                     Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
                     Destroy(collision.gameObject);
                 }
                 if (gameObject.tag == "Des")
                 {
+                    Score();
                     Instantiate(Spawnee, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
                     Destroy(gameObject);
                 }
@@ -50,15 +55,17 @@ public class Destrucktable : MonoBehaviour
             GameObject Lhand = GameObject.Find("LeftHand");
             if (Lhand.GetComponent<TrackVel>().v > HandV)
             {
-                Debug.Log("GUT PUNCH L");
+                //Debug.Log("GUT PUNCH L");
                 if (collision.gameObject.tag == "Des")
                 {
+                    Score();
                     Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
                     Destroy(collision.gameObject);
 
                 }
                 if (gameObject.tag == "Des")
                 {
+                    Score();
                     Instantiate(Spawnee, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
                     Destroy(gameObject);
 
@@ -74,14 +81,16 @@ public class Destrucktable : MonoBehaviour
                 GameObject Rhand = GameObject.Find("RightHand");
                 if (Rhand.GetComponent<TrackVel>().v > HandV)
                 {
-                    Debug.Log("PARENT FOUND R");
+                    //Debug.Log("PARENT FOUND R");
                     if (collision.gameObject.tag == "Des")
                     {
+                        Score();
                         Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
                         Destroy(collision.gameObject);
                     }
                     if (gameObject.tag == "Des")
                     {
+                        Score();
                         Instantiate(Spawnee, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
                         Destroy(gameObject);
                     }
@@ -93,15 +102,17 @@ public class Destrucktable : MonoBehaviour
                 GameObject Lhand = GameObject.Find("LeftHand");
                 if (Lhand.GetComponent<TrackVel>().v > HandV)
                 {
-                    Debug.Log("PARENT FOUND L");
+                    //Debug.Log("PARENT FOUND L");
                     if (collision.gameObject.tag == "Des")
                     {
+                        Score();
                         Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
                         Destroy(collision.gameObject);
 
                     }
                     if (gameObject.tag == "Des")
                     {
+                        Score();
                         Instantiate(Spawnee, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
                         Destroy(gameObject);
 
@@ -116,10 +127,12 @@ public class Destrucktable : MonoBehaviour
             {
                 //hvis obj ikke er har noget med hånden at gøre under collision
                 ORb = collision.rigidbody;
+                //Tjekker collisions velocity
                 if (ORb.velocity.magnitude > ObjObjV || Rb.velocity.magnitude > ObjObjV)
                 {
                     if (collision.gameObject.tag == "Des")
                     {
+                        Score();
                         Instantiate(Spawnee, new Vector3(collision.transform.position.x, collision.transform.position.y, collision.transform.position.z), Quaternion.identity);
                         Destroy(collision.gameObject);
 
@@ -127,6 +140,7 @@ public class Destrucktable : MonoBehaviour
                     }
                     if (gameObject.tag == "Des")
                     {
+                        Score();
                         Instantiate(Spawnee, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
                         Destroy(gameObject);
 
@@ -136,18 +150,26 @@ public class Destrucktable : MonoBehaviour
             }
             catch
             {
+                //Tjekker egen velocity
                 if (Rb.velocity.magnitude > ObjObjV)
                 {
                     if (collision.gameObject.tag == "Des")
                     {
+                        Score();
                         Destroy(collision.gameObject);
                     }
                     if (gameObject.tag == "Des")
                     {
+                        Score();
                         Destroy(gameObject);
                     }
                 }
             }
         }
+    }
+    private void Score()
+    {
+        ScoreHandler.score += GivenScore;
+        Instantiate(SpawnedText, transform.position + Offset, Quaternion.identity);
     }
 }

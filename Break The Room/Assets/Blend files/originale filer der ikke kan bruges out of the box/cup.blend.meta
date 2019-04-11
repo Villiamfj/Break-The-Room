@@ -1,0 +1,215 @@
+fileFormatVersion: 2
+guid: a35474b6e87558f488bafd727cd98c60
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cube
+    100002: //RootNode
+    100004: Cylinder
+    100006: Cylinder_cell
+    100008: Cylinder_cell_001
+    100010: Cylinder_cell_002
+    100012: Cylinder_cell_003
+    100014: Cylinder_cell_004
+    100016: Cylinder_cell_005
+    100018: Cylinder_cell_006
+    100020: Cylinder_cell_007
+    100022: Cylinder_cell_008
+    100024: Cylinder_cell_009
+    100026: Cylinder_cell_010
+    100028: Cylinder_cell_011
+    100030: Cylinder_cell_012
+    100032: Cylinder_cell_014
+    100034: Cylinder_cell_015
+    100036: Cylinder_cell_016
+    100038: Cylinder_cell_018
+    100040: Cylinder_cell_019
+    100042: Cylinder_cell_020
+    100044: Cylinder_cell_022
+    100046: Cylinder_cell_023
+    400000: Cube
+    400002: //RootNode
+    400004: Cylinder
+    400006: Cylinder_cell
+    400008: Cylinder_cell_001
+    400010: Cylinder_cell_002
+    400012: Cylinder_cell_003
+    400014: Cylinder_cell_004
+    400016: Cylinder_cell_005
+    400018: Cylinder_cell_006
+    400020: Cylinder_cell_007
+    400022: Cylinder_cell_008
+    400024: Cylinder_cell_009
+    400026: Cylinder_cell_010
+    400028: Cylinder_cell_011
+    400030: Cylinder_cell_012
+    400032: Cylinder_cell_014
+    400034: Cylinder_cell_015
+    400036: Cylinder_cell_016
+    400038: Cylinder_cell_018
+    400040: Cylinder_cell_019
+    400042: Cylinder_cell_020
+    400044: Cylinder_cell_022
+    400046: Cylinder_cell_023
+    2100000: None__Untitled_001
+    2100002: unnamed
+    2100004: Explode_Fade__Untitled_001
+    2100006: Explode_Fade
+    2300000: Cube
+    2300002: Cylinder
+    2300004: Cylinder_cell
+    2300006: Cylinder_cell_001
+    2300008: Cylinder_cell_002
+    2300010: Cylinder_cell_003
+    2300012: Cylinder_cell_004
+    2300014: Cylinder_cell_005
+    2300016: Cylinder_cell_006
+    2300018: Cylinder_cell_007
+    2300020: Cylinder_cell_008
+    2300022: Cylinder_cell_009
+    2300024: Cylinder_cell_010
+    2300026: Cylinder_cell_011
+    2300028: Cylinder_cell_012
+    2300030: Cylinder_cell_014
+    2300032: Cylinder_cell_015
+    2300034: Cylinder_cell_016
+    2300036: Cylinder_cell_018
+    2300038: Cylinder_cell_019
+    2300040: Cylinder_cell_020
+    2300042: Cylinder_cell_022
+    2300044: Cylinder_cell_023
+    3300000: Cube
+    3300002: Cylinder
+    3300004: Cylinder_cell
+    3300006: Cylinder_cell_001
+    3300008: Cylinder_cell_002
+    3300010: Cylinder_cell_003
+    3300012: Cylinder_cell_004
+    3300014: Cylinder_cell_005
+    3300016: Cylinder_cell_006
+    3300018: Cylinder_cell_007
+    3300020: Cylinder_cell_008
+    3300022: Cylinder_cell_009
+    3300024: Cylinder_cell_010
+    3300026: Cylinder_cell_011
+    3300028: Cylinder_cell_012
+    3300030: Cylinder_cell_014
+    3300032: Cylinder_cell_015
+    3300034: Cylinder_cell_016
+    3300036: Cylinder_cell_018
+    3300038: Cylinder_cell_019
+    3300040: Cylinder_cell_020
+    3300042: Cylinder_cell_022
+    3300044: Cylinder_cell_023
+    4300000: Cube
+    4300002: Cylinder_cell_003
+    4300004: Cylinder_cell_002
+    4300006: Cylinder_cell_023
+    4300008: Cylinder_cell_022
+    4300010: Cylinder_cell_020
+    4300012: Cylinder_cell_019
+    4300014: Cylinder_cell_018
+    4300016: Cylinder_cell_016
+    4300018: Cylinder_cell_015
+    4300020: Cylinder_cell_014
+    4300022: Cylinder_cell_012
+    4300024: Cylinder_cell_011
+    4300026: Cylinder_cell_010
+    4300028: Cylinder_cell_009
+    4300030: Cylinder_cell_008
+    4300032: Cylinder_cell_007
+    4300034: Cylinder_cell_006
+    4300036: Cylinder_cell_005
+    4300038: Cylinder_cell_004
+    4300040: Cylinder_cell_001
+    4300042: Cylinder_cell
+    4300044: Cylinder
+    7400000: Default Take
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

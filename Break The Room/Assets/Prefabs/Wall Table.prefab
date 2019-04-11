@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9451443ce766c144aad3cf3be8cc72f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -151,7 +151,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9451443ce766c144aad3cf3be8cc72f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -242,7 +242,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9451443ce766c144aad3cf3be8cc72f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -333,7 +333,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9451443ce766c144aad3cf3be8cc72f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -420,7 +420,8 @@ MonoBehaviour:
   HandV: 0.5
   Spawnee: {fileID: 9008616770560313634, guid: 28ba71c3cbe0d1142a1cd18796ae07f6, type: 3}
   GivenScore: 1
-  SpawnedText: {fileID: 0}
+  SpawnedText: {fileID: 4860862036821289766, guid: 7120a3fe4e98ca4489136b1aa145a51b,
+    type: 3}
   Offset: {x: 0, y: 0, z: 0}
 --- !u!64 &4006242574573693676
 MeshCollider:

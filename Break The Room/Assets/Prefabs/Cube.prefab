@@ -237,3 +237,7 @@ MonoBehaviour:
   ObjObjV: 2
   HandV: 1
   Spawnee: {fileID: 2094156986171426954, guid: f84b51e775996ef48aab75b235f28332, type: 3}
+  GivenScore: 1
+  SpawnedText: {fileID: 4860862036821289766, guid: 7120a3fe4e98ca4489136b1aa145a51b,
+    type: 3}
+  Offset: {x: 0, y: 0, z: 0}

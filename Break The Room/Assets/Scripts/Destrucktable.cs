@@ -171,5 +171,6 @@ public class Destrucktable : MonoBehaviour
     {
         ScoreHandler.score += GivenScore;
         Instantiate(SpawnedText, transform.position + Offset, Quaternion.identity);
+        AudioManager.audioManager.playSound(0, gameObject);
     }
 }

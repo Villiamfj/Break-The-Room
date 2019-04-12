@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7baceef083fa51b4f96beb68e2ea589e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjObjV: 3
+  ObjObjV: 1
   HandV: 1
   Spawnee: {fileID: 1844662061794248980, guid: 6b842bb2f99697b459ad25089d6fbcbc, type: 3}
   GivenScore: 1

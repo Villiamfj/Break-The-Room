@@ -49,7 +49,7 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 3
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -425,22 +425,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: fastnet3
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -483,6 +467,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}

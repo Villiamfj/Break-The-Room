@@ -589,8 +589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7baceef083fa51b4f96beb68e2ea589e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjObjV: 1
-  HandV: 0.13
+  ObjObjV: 3
+  HandV: 2
   Spawnee: {fileID: 2319231724795081113, guid: 555e29aa3b246434d913a3fd2cc8f9e1, type: 3}
   GivenScore: 1
   SpawnedText: {fileID: 4860862036821289766, guid: 7120a3fe4e98ca4489136b1aa145a51b,

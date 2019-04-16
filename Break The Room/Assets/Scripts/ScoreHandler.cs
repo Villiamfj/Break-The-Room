@@ -9,6 +9,7 @@ public class ScoreHandler : MonoBehaviour
 
     GameObject TScoreText;
     GameObject TscoreBoard;
+    GameObject TscoreBoard2;
 
     public GameObject Teleport1;
     public float score4Tele2 = 10;
@@ -24,6 +25,7 @@ public class ScoreHandler : MonoBehaviour
     {
         TScoreText = GameObject.Find("ScoreTotalText");
         TscoreBoard = GameObject.Find("Points tal");
+        TscoreBoard = GameObject.Find("Points tal2");
         Teleport2.SetActive(false);
         Teleport3.SetActive(false);
         Teleport4.SetActive(false);
@@ -34,7 +36,9 @@ public class ScoreHandler : MonoBehaviour
     {
         TScoreText.GetComponent<TextMesh>().text = score.ToString();
         TscoreBoard.GetComponent<TextMesh>().text = score.ToString();
-        
+        TscoreBoard2.GetComponent<TextMesh>().text = score.ToString();
+
+
         if (score > score4Tele2)
         {
             //Debug.Log("2 unlocked");

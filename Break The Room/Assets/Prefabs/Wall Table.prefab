@@ -211,8 +211,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861238761562923027}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.42853224, y: -22.865, z: -0.40801743}
-  m_LocalScale: {x: 0.09144948, y: 45.894997, z: 0.11509659}
+  m_LocalPosition: {x: 0.42853224, y: -22.864998, z: -0.4080175}
+  m_LocalScale: {x: 0.09144948, y: 45.894997, z: 0.11509661}
   m_Children: []
   m_Father: {fileID: 1861238761339743407}
   m_RootOrder: 0
@@ -302,8 +302,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861238761708544754}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.47063828, y: -22.865002, z: -0.427}
-  m_LocalScale: {x: 0.043505114, y: 45.895, z: 0.1}
+  m_LocalPosition: {x: 0.47063828, y: -22.865, z: -0.427}
+  m_LocalScale: {x: 0.043505114, y: 45.894997, z: 0.1}
   m_Children: []
   m_Father: {fileID: 1861238761270188642}
   m_RootOrder: 0
@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjObjV: 4
-  HandV: 0.5
+  HandV: 2
   Spawnee: {fileID: 9008616770560313634, guid: 28ba71c3cbe0d1142a1cd18796ae07f6, type: 3}
   GivenScore: 1
   SpawnedText: {fileID: 4860862036821289766, guid: 7120a3fe4e98ca4489136b1aa145a51b,

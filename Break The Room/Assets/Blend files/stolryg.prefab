@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjObjV: 3
-  HandV: 1
+  HandV: 1.5
   Spawnee: {fileID: 2283181728462922447, guid: edc9bbd56ef6061408993a60d079867d, type: 3}
   GivenScore: 1
   SpawnedText: {fileID: 4860862036821289766, guid: 7120a3fe4e98ca4489136b1aa145a51b,

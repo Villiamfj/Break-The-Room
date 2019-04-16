@@ -4213,6 +4213,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 8665948415751626769, guid: c5b3c59dff4281142865ccc277536d59,
+        type: 3}
+      propertyPath: m_TagString
+      value: Des
+      objectReference: {fileID: 0}
     - target: {fileID: 8665948415751626768, guid: c5b3c59dff4281142865ccc277536d59,
         type: 3}
       propertyPath: m_LocalPosition.x

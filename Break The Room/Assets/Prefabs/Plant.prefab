@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 5387714125516448371}
   m_Layer: 0
   m_Name: Plant
-  m_TagString: Untagged
+  m_TagString: Des
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -254,8 +254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7baceef083fa51b4f96beb68e2ea589e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjObjV: 1
-  HandV: 0.01
+  ObjObjV: 1.5
+  HandV: 1
   Spawnee: {fileID: 1872510139950100906, guid: 134fbad9b41a1d143bb94b16065fd6d4, type: 3}
   GivenScore: 1
   SpawnedText: {fileID: 4860862036821289766, guid: 7120a3fe4e98ca4489136b1aa145a51b,

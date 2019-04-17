@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: 356218c4e9cad354996c3d9dbaab6abb
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Case
+    100002: //RootNode
+    100004: Case_detail
+    100006: Case_detail_001
+    100008: Case_lid
+    100010: GPU
+    100012: MB
+    100014: PCi_card
+    100016: PSU
+    100018: Ran
+    100020: Ran_001
+    100022: Ran_002
+    100024: Ran_003
+    400000: Case
+    400002: //RootNode
+    400004: Case_detail
+    400006: Case_detail_001
+    400008: Case_lid
+    400010: GPU
+    400012: MB
+    400014: PCi_card
+    400016: PSU
+    400018: Ran
+    400020: Ran_001
+    400022: Ran_002
+    400024: Ran_003
+    2100000: Ram__ram_-_done_png
+    2100002: Outside__case_lid_-_done_png
+    2100004: PSU__PSU_-_done_png
+    2100006: Int_case__case_-_done_png
+    2100008: PCB__MB_CPU_-_done_png
+    2100010: PCB__pci_card_-_done_png
+    2100012: GPU__gpu_-_done_png
+    2100014: Outside__case_-_done_png
+    2300000: Case
+    2300002: Case_detail
+    2300004: Case_detail_001
+    2300006: Case_lid
+    2300008: GPU
+    2300010: MB
+    2300012: PCi_card
+    2300014: PSU
+    2300016: Ran
+    2300018: Ran_001
+    2300020: Ran_002
+    2300022: Ran_003
+    3300000: Case
+    3300002: Case_detail
+    3300004: Case_detail_001
+    3300006: Case_lid
+    3300008: GPU
+    3300010: MB
+    3300012: PCi_card
+    3300014: PSU
+    3300016: Ran
+    3300018: Ran_001
+    3300020: Ran_002
+    3300022: Ran_003
+    4300000: Ran_003
+    4300002: Ran_002
+    4300004: Ran_001
+    4300006: Case_lid
+    4300008: PSU
+    4300010: Case_detail
+    4300012: Case_detail_001
+    4300014: Ran
+    4300016: MB
+    4300018: PCi_card
+    4300020: GPU
+    4300022: Case
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

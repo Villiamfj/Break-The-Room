@@ -254,8 +254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7baceef083fa51b4f96beb68e2ea589e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjObjV: 1.5
-  HandV: 1
+  ObjObjV: 2.5
+  HandV: 2
   Spawnee: {fileID: 1872510139950100906, guid: 134fbad9b41a1d143bb94b16065fd6d4, type: 3}
   GivenScore: 1
   SpawnedText: {fileID: 4860862036821289766, guid: 7120a3fe4e98ca4489136b1aa145a51b,

@@ -12,7 +12,7 @@ public class ScoreHandler : MonoBehaviour
     GameObject TscoreBoard2;
 
     public GameObject Teleport1;
-    public float score4Tele2 = 10;
+    public float score4Tele2 = 9;
     public GameObject Teleport2;
     public float score4tele3 = 20;
     public GameObject Teleport3;
@@ -25,7 +25,7 @@ public class ScoreHandler : MonoBehaviour
     {
         TScoreText = GameObject.Find("ScoreTotalText");
         TscoreBoard = GameObject.Find("Points tal");
-        TscoreBoard = GameObject.Find("Points tal2");
+        TscoreBoard2 = GameObject.Find("Points tal2");
         Teleport2.SetActive(false);
         Teleport3.SetActive(false);
         Teleport4.SetActive(false);

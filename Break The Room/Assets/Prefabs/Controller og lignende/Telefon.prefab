@@ -251,7 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjObjV: 1.5
   HandV: 1
-  Spawnee: {fileID: 2094156986171426954, guid: f84b51e775996ef48aab75b235f28332, type: 3}
+  Spawnee: {fileID: 124906138240645037, guid: 50e3d4f6d3d76f5499697c152b0c63e0, type: 3}
   GivenScore: 1
   SpawnedText: {fileID: 4860862036821289766, guid: 7120a3fe4e98ca4489136b1aa145a51b,
     type: 3}
@@ -421,10 +421,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1700751449137064429}
     m_Modifications:
-    - target: {fileID: 100004, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
-      propertyPath: m_Name
-      value: fastnet3
-      objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -468,6 +464,10 @@ PrefabInstance:
     - target: {fileID: 400004, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
+      propertyPath: m_Name
+      value: fastnet3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f9756cce2ffeb4e42afb0a165c1d9de0, type: 3}
       propertyPath: m_LocalPosition.y

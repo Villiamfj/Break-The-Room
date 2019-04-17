@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjObjV: 3
-  HandV: 0.05
+  HandV: 2
   Spawnee: {fileID: 5359405600779446644, guid: 753e74fd471dfe34aa526a94f03836a5, type: 3}
   GivenScore: 1
   SpawnedText: {fileID: 4860862036821289766, guid: 7120a3fe4e98ca4489136b1aa145a51b,
